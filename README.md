@@ -30,7 +30,7 @@ This document outlines the API endpoints available in the Rover Mars application
 
 - **POST** `/map`
 - **Description**: Creates a new map with specified dimensions.
-- **Request Body**: `{"width": 10, "height": 10}`
+- **Request Body**: `{"width": 16, "height": 16}`
 - **Response**: `200 OK` on success, `400 BAD REQUEST` on invalid dimensions.
 - **Response Body**: MapEntity JSON object on success, error message on error.
 
