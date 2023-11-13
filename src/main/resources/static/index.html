@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rover Mars</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="map-container" >
+        <div id="grid-overlay" class="grid"></div>
+    </div>
+    <div class="control-panel-wrapper">
+        <div id="error-message" class="error-message" style="display: none;"></div>
+        <div class="control-panel">
+            <img src="/img/flecha.png" id="direction-arrow" class="direction-arrow blinking-image" alt="Direction Arrow">
+            <button class="control-button btn btn-f" onclick="processCommand('F')" title="Forward"></button>
+            <button class="control-button btn btn-b" onclick="processCommand('B')" title="Backward"></button>
+            <button class="control-button btn btn-l" onclick="processCommand('L')" title="Left"></button>
+            <button class="control-button btn btn-r" onclick="processCommand('R')" title="Right"></button>
+        </div>
+    </div>
+<script src="js/script.js"></script>
+</body>
+</html>
